@@ -1,0 +1,185 @@
+/* note font chữ */
+@font-face {
+    font-family: "alger";
+    src: url(/font/ALGER.TTF);
+}
+
+@font-face {
+    font-family: "cook";
+    src: url(/font/CONSOLAZ.TTF);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('/img/background1.jpg');
+    background-attachment: fixed;
+    width: 100%;
+}
+
+/* Header */
+.containerr{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.header{
+    background-color:chocolate;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px 0;
+}
+h3{
+    font-family: alger;
+    color: bisque;
+    margin-left: -90px;
+    margin-right: 50px;
+    margin-top: 16px;
+}
+#logo img{  
+    max-width: 130px;
+    height: auto;
+    margin-left: -100%;
+}
+.main-menu{
+    display: flex;
+    list-style: none;
+    margin-top: 35px;
+    padding: 0;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.main-menu li{
+    position: relative;
+}
+.main-menu li a{
+    text-decoration: none;
+    color:black;
+    display: block;
+    padding: 18px 30px;
+    font-weight: 600;
+    color: #fff;
+}
+/* Navigation */
+.main-menu ul.sub-menu{
+    position: absolute;
+    background-color:rgb(173, 85, 23) ;
+    margin-top: 10px;
+    list-style: none;
+    width:  150px;
+    line-height: 20px;
+    display: none;
+    border: 1px solid #fff;
+}
+.main-menu li:hover ul.sub-menu{
+    display: block;
+    z-index: 1;
+}
+.main-menu ul.sub-menu a{
+    padding: 7px 10px;
+    border-bottom: 1px solid #fff;
+}
+.main-menu ul.sub-menu li:hover a{
+    background-color:rgb(227, 151, 97);
+}
+.main-menu ul.sub-menu li:last-child a {
+    border: none;
+}
+/* End navigation */
+.main-menu>li>a{
+    position: relative;
+}
+.main-menu>li>a::before{
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color:black;
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+}
+.main-menu>li:hover>a::before{
+    width: 100%;
+}
+.search-container {
+    margin-bottom: 8px;
+    margin-left: -10%;
+}
+.search-container form {
+    position: relative;
+    width: 270px;
+}
+.search-container input[type=text] {
+    width: 290px;
+    padding: 15px;
+    border: 2px solid #fff;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+.search-container button {
+    position: absolute;
+    right: 0;
+    top: 0 ;
+    margin: 10px -10px;
+    color:white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.login_header{
+    max-width: 50px;
+    width: 100%;
+    min-height: 50px;
+    display: grid;
+    place-items: center;
+    border-radius: 16px;
+    padding: 9px;
+    margin-right:5%;
+    margin-left: 40px;
+}
+
+.mentor {
+   color:darkblue; 
+    text-align: left;
+    padding: 30px 90px ;
+    border: 14px double ;
+    border-radius: 30px;
+    box-sizing: 30px;
+    font-size: 25px;
+}
+
+.hoahoa {
+    margin-top: 0;
+    font-size: 1.5vw;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 45px;
+    margin-inline-end: 45px;
+}
+
+.mainner ul {
+   padding: 0;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.mainner ul li {
+    margin-bottom: .6em;
+    box-sizing: border-box;
+    margin-left: 1.3em;
+    font-size: 26px;
+}
